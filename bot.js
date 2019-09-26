@@ -19,8 +19,13 @@ client.on('message', message => {
        message.reply('pong');
 
        }
-
+    if(message.content === 'daddy is hungry'){
+     
+       message.reply('come get a piece of this ass, daddy uwu');
+     
+    }
 });
+
 
  
 
