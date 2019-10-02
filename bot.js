@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
-const { Client, Attachment } = require('discord.js');
+const Attachment = require('discord.js');
 
 
-const client = new Client();
+const client = new Discord.Client();
 
  
 
