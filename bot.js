@@ -1,9 +1,10 @@
 const Discord = require('discord.js');
 
+// Extract the required classes from the discord.js module
+const { Client, MessageAttachment } = require('discord.js');
 
-const client = new Discord.Client();
-
- 
+// Create an instance of a Discord client
+const client = new Client();
 
 client.on('ready', () => {
 
@@ -26,8 +27,8 @@ client.on('message', message => {
      
     }
     if(message.content === '!hello'){
-       
-       attachment = new Discord.Attachment('https://imgur.com/gallery/iTnHQsa.png');
+       const attachment = new MessageAttachment('https://i.imgur.com/IKZBxc4.jpg');
+     
        message.channel.send(attachment);
     }
 });
