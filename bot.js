@@ -24,6 +24,10 @@ client.on('message', message => {
        message.reply('come get a piece of this ass, daddy uwu');
      
     }
+    if(message.content === '!hello'){
+       const attachment = new Attachment('https://imgur.com/gallery/YJ6TPda');
+       message.channel.send(attachment);
+    }
 });
 
 
