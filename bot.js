@@ -1,5 +1,4 @@
 const Discord = require('discord.js');
-const Attachment = require('discord.js');
 
 
 const client = new Discord.Client();
@@ -27,7 +26,7 @@ client.on('message', message => {
      
     }
     if(message.content === '!hello'){
-       const attachment =  new Discord.Attachment('https://imgur.com/gallery/iTnHQsa.png');
+       new Discord.Attachment('https://imgur.com/gallery/iTnHQsa.png',attachment);
        message.channel.send(attachment);
     }
 });
