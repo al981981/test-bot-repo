@@ -25,7 +25,7 @@ client.on('message', message => {
      
     }
     if(message.content === '!hello'){
-       const attachment = new Attachment('https://imgur.com/gallery/YJ6TPda');
+       const attachment = new Attachment('https://imgur.com/gallery/YJ6TPda.png');
        message.channel.send(attachment);
     }
 });
