@@ -26,7 +26,8 @@ client.on('message', message => {
      
     }
     if(message.content === '!hello'){
-       new Discord.Attachment('https://imgur.com/gallery/iTnHQsa.png',attachment);
+       
+       attachment = new Discord.Attachment('https://imgur.com/gallery/iTnHQsa.png');
        message.channel.send(attachment);
     }
 });
