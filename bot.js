@@ -1,4 +1,4 @@
-const {client, Attachment} = require('discord.js');
+const {Client, Attachment} = require('discord.js');
 const client = new Client();
  
 client.on('ready', () => {
