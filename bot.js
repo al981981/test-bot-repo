@@ -1,5 +1,5 @@
-const Discord = require('discord.js');
-const {client, Attachment} = new Discord.Client();
+const {client, Attachment} = require('discord.js');
+const client = new Client();
  
 client.on('ready', () => {
     console.log('I am ready!');
