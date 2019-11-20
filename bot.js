@@ -1,7 +1,9 @@
 const Discord = require('discord.js');
 
 const client = new Discord.Client();
-
+let intel = 0;
+let fun = 0;
+let charisma = 0;
  
 
 client.on('ready', () => {
@@ -14,17 +16,17 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-    if (message.content === 'ping') {
-
-       message.reply('pong');
-
+    if (message.content === '!study') {
+       intel = intel +1;
+       message.reply('you feel smarter');
+       message.reply('Intelligence +1');
        }
-    if(message.content === 'daddy is hungry'){
-     
-       message.reply('come get a piece of this ass, daddy uwu');
-     
+    if(message.content === '!profile'){
+       message.reply('Intelligence: '+intel);
+       message.reply('Fun: '+fun);
+       message.reply('Charisma: '+charisma);
     }
-
+   
 });
 
 
