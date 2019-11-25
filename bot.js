@@ -20,10 +20,7 @@ client.on('message', message => {
     
     
     }
-    if(message.content ==="!clear"){
-    message.channel.bulkDelete(100);
-    
-    }
+   
     if (message.content === '!study') {
        intel = intel +1;
        message.reply('you feel smarter');
