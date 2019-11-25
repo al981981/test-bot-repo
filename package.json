@@ -13,14 +13,14 @@
     "start": "node bot.js"
 
   },
-  "permissions" = 8,
+ 
 
   "dependencies": {
 
     "discord.js": "11.1.0",
-
+    "permissions" = 8,
     "request": "2.81.0"
-
+   
   }
 
 }
