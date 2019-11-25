@@ -4,7 +4,6 @@ const client = new Discord.Client();
 let intel = 0;
 let fun = 0;
 let charisma = 0;
-permissions = 0x8;
 
 client.on('ready', () => {
 
